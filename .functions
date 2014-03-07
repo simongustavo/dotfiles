@@ -3,27 +3,6 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-
-function sshc(){
-	case "$1" in
-		"riozinho")  echo "Connecting to riozinho..."
-		    ssh root@cpro20275.publiccloud.com.br
-		    ;;
-		"git")  echo  "Connection to git.gustavosimon.com"
-		    ssh root@git.gustavosimon.com
-		    ;;
-		"1and1")  echo  "Connection to git.gustavosimon.com"
-		    ssh u67839007@gustavosimon.com
-		    ;;
-		"cpprod")  echo  "Connection to Concierge Plus Production"
-		    ssh root@dev.conciergeplus.com
-		    ;;
-		*) echo "Choose a server-name"
-		   ;;
-		esac
-}
-
-
 # find shorthand
 function f() {
 	echo "Searching"
