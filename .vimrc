@@ -1,12 +1,13 @@
+
+
 " Make vim more useful
 set nocompatible
-
+syntax on
 " Set syntax highlighting options.
 set t_Co=256
 set background=dark
-syntax on
-colorscheme badwolf
 
+" colorscheme molokai
 " Enabled later, after Pathogen
 filetype off
 
@@ -222,7 +223,8 @@ set relativenumber " Use relative line numbers. Current line is still in status 
 au BufReadPost,BufNewFile * set relativenumber
 
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
-call pathogen#runtime_append_all_bundles()
+runtime ~/.vim/autoload/pathogen.vim
+" call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 " JSON
