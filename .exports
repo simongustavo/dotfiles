@@ -1,3 +1,9 @@
+# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+# If Homebrew stop to work, replace this on .bash_profile. Comment on linux
+PATH=/usr/local/bin:$PATH
+PATH=$HOME/bin:$PATH
+export PATH
+
 # Make vim the default editor
 export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
