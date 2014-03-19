@@ -1,13 +1,12 @@
-
-
 " Make vim more useful
 set nocompatible
-syntax on
+
 " Set syntax highlighting options.
 set t_Co=256
 set background=dark
+syntax on
+colorscheme badwolf
 
-" colorscheme molokai
 " Enabled later, after Pathogen
 filetype off
 
@@ -17,7 +16,7 @@ let mapleader=","
 " Local dirs
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
-set undodir=~/.vim/undo
+" set undodir=~/.vim/undo
 
 " Set some junk
 set autoindent " Copy indent from last line when starting new line.
@@ -31,7 +30,7 @@ set expandtab " Expand tabs to spaces
 set foldcolumn=4 " Column to show folds
 set foldenable
 set foldlevel=2
-" set foldlevelstart=2 " Sets `foldlevel` when editing a new buffer
+set foldlevelstart=2 " Sets `foldlevel` when editing a new buffer
 set foldmethod=syntax " Markers are used to specify folds.
 set foldminlines=0 " Allow folding single lines
 set foldnestmax=3 " Set max fold nesting level
@@ -80,7 +79,7 @@ set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.br
 set title " Show the filename in the window titlebar.
 set ttyfast " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
-set undofile " Persistent Undo.
+" set undofile " Persistent Undo.
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
 set wildchar=<TAB> " Character for CLI expansion (TAB-completion).
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
@@ -219,12 +218,11 @@ autocmd BufReadPost *
   \ endif
 
 " Set relative line numbers
-set relativenumber " Use relative line numbers. Current line is still in status bar.
-au BufReadPost,BufNewFile * set relativenumber
+" set relativenumber " Use relative line numbers. Current line is still in status bar.
+" au BufReadPost,BufNewFile * set relativenumber
 
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
-runtime ~/.vim/autoload/pathogen.vim
-" call pathogen#runtime_append_all_bundles()
+call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 " JSON
