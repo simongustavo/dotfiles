@@ -9,9 +9,11 @@ alias -- -="cd -"
 
 # programs
 alias slt='open -a "Sublime Text 2"'
+alias atom='open -a "Atom"'
+
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
+#ln -s "/Applications/Atom.app/Contents/MacOS/Atom" ~/bin/atom
 
 # be nice
 alias please=sudo
@@ -91,6 +93,7 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Shortcuts
 alias g="git"
 alias v="vim"
+alias vi="vim"
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -118,3 +121,5 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+ alias ra="sudo apachectl restart"
