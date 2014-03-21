@@ -35,5 +35,5 @@ done
 rm -rf ~/.vim
 rm -rf ~/.vimrc
 
-cp ~/dotfiles/.vim ~/.vim
+cp -r ~/dotfiles/.vim ~/.vim
 cp ~/dotfiles/.vimrc ~/.vimrc
