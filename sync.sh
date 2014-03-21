@@ -29,3 +29,11 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/.$file ~/.$file
 done
+
+#remove symbolic link for .vim .vimrc
+
+rm -rf ~/.vim
+rm -rf ~/.vimrc
+
+cp ~/dotfiles/.vim ~/.vim
+cp ~/dotfiles/.vimrc ~/.vimrc
