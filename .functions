@@ -3,7 +3,7 @@ datauri() {
     local mimeType=""
 
     if [ -f "$1" ]; then
-        mimeType=$(file -b --mime-type "$1")
+        mimeType=$(file -b --mime "$1")
         #                └─ do not prepend the filename to the output
 
         if [[ $mimeType == text/* ]]; then
@@ -14,7 +14,7 @@ datauri() {
                     "$mimeType" \
                     "$(openssl base64 -in "$1" | tr -d "\n")"
 					
-		echo "\n"
+		echo -e "\n"
     else
         echo "'$1' is not a file."
     fi

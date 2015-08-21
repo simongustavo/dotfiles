@@ -1,3 +1,5 @@
+alias gus="su - Gustavo.Simon"
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias cd..="cd .."
