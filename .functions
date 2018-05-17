@@ -1,3 +1,10 @@
+function path(){
+    old=$IFS
+    IFS=:
+    printf "%s\n" $PATH
+    IFS=$old
+}
+
 datauri() {
 
     local mimeType=""

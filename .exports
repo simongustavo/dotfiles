@@ -20,6 +20,8 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 export NODE_PATH=/usr/local/lib/node_modules
 
-PATH=$PATH:/mnt/user_homes/Gustavo.Simon/httpdocs/woff2/
+export PATH=/usr/local/bin/python3:$PATH
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 
 export PATH

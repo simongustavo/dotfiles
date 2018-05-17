@@ -9,10 +9,13 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias psd="open -a /Applications/Adobe\ Photoshop\ CS5/Adobe\ Photoshop\ CS5.app"
+
 # programs
 alias slt='open -a "Sublime Text 2"'
 alias atom='open -a "Atom"'
 
+alias tr1='traceroute -q1 '
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 #ln -s "/Applications/Atom.app/Contents/MacOS/Atom" ~/bin/atom
@@ -23,7 +26,6 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 
 # handy things
 alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
 alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
 
 
