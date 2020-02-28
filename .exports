@@ -1,7 +1,7 @@
 # Make vim the default editor
-export EDITOR="vim"
-export GIT_EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nano"
+export GIT_EDITOR="code --wait"
+export VISUAL="code --wait"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
@@ -18,10 +18,23 @@ export HISTTIMEFORMAT
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
-export NODE_PATH=/usr/local/lib/node_modules
+#export NODE_PATH=/usr/local/lib/node_modules
 
 export PATH=/usr/local/bin/python3:$PATH
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 
 export PATH
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+export DB_HOST="localhost"
+export DB_USR="root"
+export DB_PWD="concierge2016"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
