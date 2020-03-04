@@ -1,7 +1,7 @@
 # This prompt inspired by gf3, sindresorhus, alrra, and mathiasbynens.
 # but customized to me. <3
 
-default_username='gustavo.simon'
+default_username='gsimon'
 
 
 if which thefuck > /dev/null; then
@@ -82,8 +82,8 @@ set_prompts() {
 
         userhost=""
         userhost+="\[${userStyle}\]$USER "
-        userhost+="\[${white}\]at "
-        userhost+="\[${orange}\]$HOSTNAME "
+        #userhost+="\[${white}\]at "
+        #userhost+="\[${orange}\]$HOSTNAME "
         userhost+="\[${white}\]in"
 
         if [ $USER != "$default_username" ]; then echo $userhost ""; fi
